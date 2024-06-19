@@ -6,10 +6,11 @@ import { DetailComponent } from './products/detail/detail.component';
 import { EditComponent } from './products/edit/edit.component';
 
 const routes: Routes = [
-  {path: 'list', component: ListComponent},
+  {path: '', component: ListComponent},
   {path: 'detalle/:id', component: DetailComponent},
   {path: 'nuevo', component: CreateComponent},
   {path: 'editar/:id', component: EditComponent},
+  {path: '**', redirectTo: '', pathMatch: 'full'}
   
 ];
 
